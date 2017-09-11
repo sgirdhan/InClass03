@@ -9,5 +9,134 @@
         android:layout_height="match_parent"
         tools:context="com.example.salman.inclass04.MainActivity">
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editTextName"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:hint="@string/editNameHint" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/editTextName"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:ems="10"
+            android:hint="@string/editEmailHint"
+            android:inputType="textEmailAddress|textWebEmailAddress" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:contentDescription="d"
+            app:srcCompat="@drawable/select_avatar"
+            android:layout_below="@+id/editTextEmail"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textViewDepartmentLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/imageView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/textDepartmentLabel"
+            android:textColor="@android:color/black" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupDepartment"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewDepartmentLabel"
+            android:layout_alignStart="@+id/textViewDepartmentLabel"
+            android:layout_below="@+id/textViewDepartmentLabel"
+            android:layout_marginTop="10dp">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/department_1" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/department_2" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/department_3" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textViewCurrentMoodLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/textMoodLabel"
+            android:textColor="@android:color/black"
+            android:layout_below="@+id/radioGroupDepartment"
+            android:layout_alignLeft="@+id/radioGroupDepartment"
+            android:layout_alignStart="@+id/radioGroupDepartment" />
+
+        <TextView
+            android:id="@+id/textViewCurrentMood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewCurrentMoodLabel"
+            android:layout_centerHorizontal="true"
+            android:text="@string/moodHappy"
+            android:textColor="@android:color/black" />
+
+        <SeekBar
+            android:id="@+id/seekBarMood"
+            style="@style/Widget.AppCompat.SeekBar.Discrete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/radioGroupDepartment"
+            android:layout_alignLeft="@+id/textViewCurrentMoodLabel"
+            android:layout_alignRight="@+id/radioGroupDepartment"
+            android:layout_alignStart="@+id/textViewCurrentMoodLabel"
+            android:layout_below="@+id/textViewCurrentMoodLabel"
+            android:layout_marginTop="15dp"
+            android:max="3"
+            android:progress="2" />
+
+        <ImageView
+            android:id="@+id/imageViewEmoji"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/seekBarMood"
+            android:layout_alignTop="@+id/seekBarMood"
+            android:layout_toRightOf="@+id/seekBarMood"
+            app:srcCompat="@drawable/happy" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/seekBarMood"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:text="@string/submitButtonLabel" />
+
+
     </RelativeLayout>
     </layout>

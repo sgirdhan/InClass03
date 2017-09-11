@@ -1,9 +1,8 @@
 package com.example.sharangirdhani.inclass03;
 
 import android.databinding.DataBindingUtil;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 
 import com.example.sharangirdhani.inclass03.databinding.ActivityMainBinding;
 
