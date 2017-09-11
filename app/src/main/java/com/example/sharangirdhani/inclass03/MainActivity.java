@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 //        setContentView(R.layout.activity_main);
-        binding.textView2.setText("Salman");
+
+//        binding.textView2.setText("Salman");
     }
 }
