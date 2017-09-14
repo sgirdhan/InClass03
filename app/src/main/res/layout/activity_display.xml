@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.salman.inclass04.DisplayActivity">
+
+
+        <ImageView
+            android:id="@+id/imageViewDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            app:srcCompat="@drawable/select_avatar"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/textViewNameLabelDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageViewDisplay"
+            android:layout_marginEnd="21dp"
+            android:layout_marginRight="21dp"
+            android:layout_marginTop="61dp"
+            android:layout_toLeftOf="@+id/imageViewDisplay"
+            android:layout_toStartOf="@+id/imageViewDisplay"
+            android:text="@string/textNameDisplayLabel"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewNameDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewNameLabelDisplay"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/textViewNameLabelDisplay"
+            android:layout_toRightOf="@+id/textViewNameLabelDisplay"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textViewEmailLabelDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="@string/textEmailDisplayLabel"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_alignLeft="@+id/textViewNameLabelDisplay"
+            android:layout_alignStart="@+id/textViewNameLabelDisplay"
+            android:layout_alignRight="@+id/textViewNameLabelDisplay"
+            android:layout_alignEnd="@+id/textViewNameLabelDisplay" />
+
+        <TextView
+            android:id="@+id/textViewEmailDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewEmailLabelDisplay"
+            android:layout_alignLeft="@+id/textViewNameDisplay"
+            android:layout_alignStart="@+id/textViewNameDisplay"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textViewDepartmentLabelDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewEmailLabelDisplay"
+            android:layout_alignStart="@+id/textViewEmailLabelDisplay"
+            android:layout_below="@+id/textViewEmailLabelDisplay"
+            android:layout_marginTop="16dp"
+            android:text="@string/textDepartmentLabel"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewDepartmentDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewDepartmentLabelDisplay"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:id="@+id/textViewMoodDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewDepartmentLabelDisplay"
+            android:layout_alignStart="@+id/textViewDepartmentLabelDisplay"
+            android:layout_below="@+id/textViewDepartmentLabelDisplay"
+            android:layout_marginTop="18dp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageViewEmojiDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textViewDepartmentDisplay"
+            android:layout_alignRight="@+id/textViewDepartmentDisplay"
+            android:layout_below="@+id/textViewMoodDisplay"
+            android:layout_toRightOf="@+id/textViewNameLabelDisplay"
+            app:srcCompat="@drawable/happy" />
+
+    </RelativeLayout>
+</layout>

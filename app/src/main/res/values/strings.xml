@@ -17,7 +17,7 @@
 
     <string name="textNameDisplayLabel">Name:</string>
     <string name="textEmailDisplayLabel">Email:</string>
-
+    <string name="select_new_avatar_label">Select your Avatar</string>
     <string name="mainActivityTitle">Main Activity</string>
     <string name="displayActivityTitle">Display Activity</string>
     <string name="editActivityTitle">Edit Activity</string>

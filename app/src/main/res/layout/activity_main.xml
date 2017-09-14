@@ -41,7 +41,8 @@
             android:contentDescription="d"
             app:srcCompat="@drawable/select_avatar"
             android:layout_below="@+id/editTextEmail"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:onClick="avatarClick"/>
 
         <TextView
             android:id="@+id/textViewDepartmentLabel"
@@ -54,7 +55,8 @@
             android:layout_marginStart="20dp"
             android:layout_marginTop="10dp"
             android:text="@string/textDepartmentLabel"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/black"
+            />
 
         <RadioGroup
             android:id="@+id/radioGroupDepartment"
@@ -139,4 +141,4 @@
 
 
     </RelativeLayout>
-    </layout>
+</layout>
