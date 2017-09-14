@@ -4,7 +4,7 @@ import android.os.Parcel;
 import android.os.Parcelable;
 
 /**
- * Created by KashishSyeda on 9/11/2017.
+ * Created by sharangirdhani on 9/11/2017.
  */
 
 public class Profile implements Parcelable {

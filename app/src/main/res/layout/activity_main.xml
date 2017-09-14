@@ -7,7 +7,7 @@
         android:id="@+id/activity_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.example.salman.inclass04.MainActivity">
+        tools:context="com.example.sharangirdhani.inclass03.MainActivity">
 
         <EditText
             android:layout_width="match_parent"

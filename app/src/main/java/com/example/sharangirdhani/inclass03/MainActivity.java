@@ -1,6 +1,6 @@
 package com.example.sharangirdhani.inclass03;
 
-        import android.content.Intent;
+import android.content.Intent;
 import android.databinding.DataBindingUtil;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -46,9 +46,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
-//        setContentView(R.layout.activity_main);
 
-//        binding.textView2.setText("Salman");
         final String[] mood = {"Angry", "Sad", "Happy", "Awesome"};
         progInt=2;
         cat = "SIS";
